@@ -1,11 +1,11 @@
 {
   "name": "@devalade/reflection",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a reflection class for JavaScript. It's inspired by the PHP reflection class",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devalade/reflection.git"
+    "url": "git+https://github.com/devalade/reflection-class.git"
   },
   "exports": {
     ".": "./dist/index.js"
@@ -15,12 +15,25 @@
     "typecheck": "tsc -p tsconfig.lib.json --noEmit",
     "test": "node --experimental-strip-types --disable-warning=ExperimentalWarning --test './src/**/*.test.ts'"
   },
-  "keywords": [],
+  "keywords": [
+    "reflection",
+    "typescript",
+    "javascript",
+    "introspection",
+    "class",
+    "object",
+    "metadata"
+  ],
   "author": "devalade",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.10.1",
     "typescript": "^5.7.2"
   },
-  "packageManager": "pnpm@9.14.4"
+  "packageManager": "pnpm@9.14.4",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
 }
