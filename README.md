@@ -95,39 +95,38 @@ try {
   console.error('Failed to create instance:', error);
 }
 ```
-```
 
 #### API Overview
-The ReflectionClass<T> takes a target T (which can be a class constructor or an object instance) in its constructor.
+The `ReflectionClass<T>` takes a target T (which can be a class constructor or an object instance) in its constructor.
 
 Core Methods
 constructor(target: T): Initializes the reflection for the given target.
 
-- getName(): string: Gets the name of the class.
+- `getName()`: string: Gets the name of the class.
 
-- getConstructor(): Function: Gets the constructor function.
+- `getConstructor()`: Function: Gets the constructor function.
 
-- getPrototype(): object | null: Gets the prototype object of the class.
+- `getPrototype()`: object | null: Gets the prototype object of the class.
 
-- getParentClass(): Function | null: Gets the parent class constructor.
+- `getParentClass()`: Function | null: Gets the parent class constructor.
 
-- getParentClassName(): string | null: Gets the name of the parent class.
+- `getParentClassName()`: string | null: Gets the name of the parent class.
 
-- isClass(): boolean: Checks if the reflected target is a class constructor.
+- `isClass()`: boolean: Checks if the reflected target is a class constructor.
 
-- isInstance(): boolean: Checks if the reflected target is an object instance.
+- `isInstance()`: boolean: Checks if the reflected target is an object instance.
 
 Property Introspection
-- getOwnProperties(): string[]: Gets an array of own property names (static for classes, instance-specific for objects).
+- `getOwnProperties()`: string[]: Gets an array of own property names (static for classes, instance-specific for objects).
 
-- getProperties(): string[]: Gets an array of all property names, including inherited ones (static for classes, instance and prototype chain for objects).
+- `getProperties()`: string[]: Gets an array of all property names, including inherited ones (static for classes, instance and prototype chain for objects).
 
-- hasOwnProperty(name: string): boolean: Checks if the target has a specific own property.
+- `hasOwnProperty(name: string)`: boolean: Checks if the target has a specific own property.
 
-- hasProperty(name: string): boolean: Checks if the target has a specific property (including the prototype chain).
+- `hasProperty(name: string)`: boolean: Checks if the target has a specific property (including the prototype chain).
 
 Method Introspection
-- getOwnMethods(): string[]:
+- `getOwnMethods()`: string[]:
 
 For classes: Gets own static methods.
 
@@ -139,20 +138,20 @@ For classes: Gets all static methods (own and inherited).
 
 For instances: Gets all methods (own instance methods, prototype methods, and inherited methods).
 
-- hasOwnMethod(name: string): boolean:
+- `hasOwnMethod(name: string)`: boolean:
 
 For classes: Checks for an own static method.
 
 For instances: Checks for a method on the instance's direct prototype.
 
-- hasMethod(name: string): boolean: Checks if the target or its prototype chain has a method with the given name (includes instance-specific methods).
+- `hasMethod(name: string)`: boolean: Checks if the target or its prototype chain has a method with the given name (includes instance-specific methods).
 
 Instantiation and Type Checking
-- isInstantiable(): boolean: Checks if the reflected target (typically a class) can be instantiated.
+- `isInstantiable()`: boolean: Checks if the reflected target (typically a class) can be instantiated.
 
-- newInstance(...args: any[]): object | null: Creates a new instance of the reflected class. Throws a TypeError if the target is not a constructor.
+- `newInstance(...args: any[])`: object | null: Creates a new instance of the reflected class. Throws a TypeError if the target is not a constructor.
 
-- isInstanceCheck(obj: any): boolean: Checks if a given object obj is an instance of the reflected class (meaningful only when reflecting a class constructor).
+- `isInstanceCheck(obj: any)`: boolean: Checks if a given object obj is an instance of the reflected class (meaningful only when reflecting a class constructor).
 
 Utility
-- toString(): string: Returns a string representation of the reflected entity.
+- `toString()`: string: Returns a string representation of the reflected entity.
