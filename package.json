@@ -1,6 +1,6 @@
 {
   "name": "@devalade/reflection",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a reflection class for JavaScript. It's inspired by the PHP reflection class",
   "type": "module",
   "repository": {
