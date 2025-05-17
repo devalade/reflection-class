@@ -8,7 +8,7 @@
     "url": "git+https://github.com/devalade/reflection.git"
   },
   "exports": {
-    ".": "./dist/reflection.js"
+    ".": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc -p tsconfig.lib.json",
