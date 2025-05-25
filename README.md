@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/%40devalade%2Freflection.svg)](https://badge.fury.io/js/%40devalade%2Freflection)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub repository](https://img.shields.io/badge/GitHub-View%20Repository-blue?logo=github)](https://github.com/devalade/reflection)
+[![GitHub repository](https://img.shields.io/badge/GitHub-View%20Repository-blue?logo=github)](https://github.com/devalade/reflection-class)
 
 A powerful and intuitive TypeScript/JavaScript library for performing reflection on classes and objects. This utility allows you to introspect and understand the structure of your code at runtime, providing capabilities similar to reflection APIs in languages like Java or PHP.
 
